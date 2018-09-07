@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Muli';
+}
+
+/* Nawigacja */
+
+#main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  #316591;
+    width: 100%;
+    margin-top: 0%;
+    z-index: 2;
+    
+}
+
+#main-nav ul{
+
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+   
+
+}
+
+#main-nav ul .menu-item{
+    
+    list-style-type: none;
+    
+}
+
+#main-nav ul .menu-item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 1.1em;
+    transition: all .4s;
+    
+}
+
+#main-nav ul .menu-item a:hover{
+
+    color:#316591;
+    background-color: white;
+    font-weight: 600;
+}
+
+/* header */
+#main-header{
+    background-image: linear-gradient( rgba(0, 0, 34, 0.5),
+    rgba(0, 0, 34, 0.001)), url(../img/skyscrapers-1081737_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#main-header .main-header-content{
+    width: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+#main-header .main-header-content figure img{
+    /* float: left; */
+    width: 250px;
+  
+      }
+
+#main-header .main-header-content h1{
+      font-size: 3em;
+      color: white;
+    }
+
+
+
