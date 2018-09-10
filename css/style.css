@@ -8,6 +8,10 @@ body{
     font-family: 'Muli';
 }
 
+.width50{
+    width: 50%;
+}
+
 /* Nawigacja */
 
 #main-nav{
@@ -57,7 +61,7 @@ body{
 /* header */
 #main-header{
     background-image: linear-gradient( rgba(0, 0, 34, 0.5),
-    rgba(0, 0, 34, 0.001)), url(../img/skyscrapers-1081737_1920.jpg);
+    rgba(0, 0, 34, 0.009)), url(../img/skyscrapers-1081737_1920.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -65,29 +69,101 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 #main-header .main-header-content{
-    width: 450px;
-    margin: auto;
+   
     display: flex;
     align-items: center;
+    justify-content: center;
+  
+}
+
+
+#main-header .main-header-content figure{
+
+    margin: auto 20px;
+    text-align: center;
+}
+#main-header .main-header-content figure img{
+   
+      max-height: 300px;
+      
+        }
+
+#main-header .main-header-content h1{
+      font-size: 2.5em;
+      color: white;
+      text-align:left;
+
+    }
+/*h1 wychodzi poza zakres obrazka - RWD: pod logo*/
+
+/* products */
+
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+
+}
+#products figure{
     
+    width: 18%;
+    border: .8px solid #316591;
+    text-align: center;
+    padding: 10px;
+
+}
+
+#products figure img{
+    
+    max-height: 140px;
+     
+      
+}
+
+#contact {
+    background-color: #316591;
+    color: white;
+    display: flex;
+    padding: 20px;
+    
+}
+#contact  address{
+    font-style: none;    
+}
+
+#contact form input:not([type='submit']), 
+#contact textarea {
+    background-color:white;
+    padding: 10px;
+    border: none;
+   
+    margin-bottom: 5px;
+    outline: none;
+    width:90%;
+}
+
+#contact form input[type="submit"] {
+    width: 25%;
+    align-self: flex-end;
+    background-color: #1ac056;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    border: 1px solid #1ac056;
     
 }
 
-#main-header .main-header-content figure img{
-    /* float: left; */
-    width: 250px;
-  
-      }
 
-#main-header .main-header-content h1{
-      font-size: 3em;
-      color: white;
-    }
 
 
 
