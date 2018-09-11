@@ -53,8 +53,9 @@ body{
 
 #main-nav ul .menu-item a:hover{
 
-    color:#316591;
-    background-color: white;
+    border: none;
+    font-weight: 300;
+    background-color: #1ac056;
     font-weight: 600;
 }
 
@@ -132,6 +133,17 @@ body{
     padding: 20px;
     
 }
+
+#contact .address-info{
+    
+   margin-top: 8%;
+   line-height: 1.5em;
+}
+
+#contact .email a{
+    color: #1ac056;
+}
+
 #contact  address{
     font-style: none;    
 }
@@ -141,7 +153,6 @@ body{
     background-color:white;
     padding: 10px;
     border: none;
-   
     margin-bottom: 5px;
     outline: none;
     width:90%;
@@ -160,8 +171,43 @@ body{
 
 #contact form input:focus, #contact form textarea:focus {
     border: 1px solid #1ac056;
+    outline: none;
     
 }
+
+#contact form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+#contact form input::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+#contact form input:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+#contact form input:-moz-placeholder { /* Firefox 18- */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+  
+#contact textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+#contact textarea::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+#contact textarea:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
+#contact textarea:-moz-placeholder { /* Firefox 18- */
+    color: rgb(87, 87, 87);
+    font-family:'Muli';
+  }
 
 
 
