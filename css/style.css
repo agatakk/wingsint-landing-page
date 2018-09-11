@@ -25,6 +25,10 @@ body{
     
 }
 
+#main-nav input, #main-nav label{
+    display: none;
+}
+
 #main-nav ul{
 
     display: flex;

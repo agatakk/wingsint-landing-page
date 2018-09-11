@@ -1,0 +1,125 @@
+@media (max-width: 1264px){
+    #products{
+        height: 170vh;
+    }
+    #products figure {
+
+        width: 33%;
+
+    }
+    #products figure img{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 992px){
+
+    
+#nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left: 1em;
+    height:100%;
+    display:flex;
+    align-items: center;
+
+}
+
+.nav-toggle-label span, .nav-toggle-label span:before, .nav-toggle-label span:after{
+    
+    display: block;
+    height:2px;
+    width: 2em;
+    border-radius: 2px;
+    position:relative;
+    
+}
+.nav-toggle-label span,  .nav-toggle-label span:before,  .nav-toggle-label span:after{
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span:before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span:after{
+    top: 7px;
+}
+
+#main-nav ul li a{
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+.nav-toggle:checked ~#main-nav{
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ #main-nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+}
+
+
+    #main-header {
+        width: 100%;
+
+        
+    }
+    #main-header .main-header-content{
+        
+        flex-direction: column;
+        
+    }
+
+    #main-header .main-header-content figure img {
+
+        max-height: 270px;
+    }
+
+    #main-header .main-header-content h1{
+        text-align: center;
+    }
+    #products {
+        height: 170vh;
+    }
+    #products figure {
+
+        width: 30%;
+
+    }
+
+    #products figure img{
+        max-width: 180px;
+    }
+
+}
+
+@media (max-width: 712px){
+    #products{
+        height: 350vh;
+    }
+    #products figure {
+
+        width: 60%;
+
+    }
+    #products figure img{
+        max-width: 250px;
+    }
+
+}
+
+@media(max-width: 460px){
+    #products figure {
+
+        width: 80%;
+
+    }
+
+}
