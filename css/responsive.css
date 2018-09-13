@@ -14,57 +14,7 @@
 }
 
 @media (max-width: 992px){
-
     
-/* #nav-toggle{
-    display: none;
-}
-
-.nav-toggle-label{
-    position:absolute;
-    top:0;
-    left:0;
-    margin-left: 1em;
-    height:100%;
-    display:flex;
-    align-items: center;
-
-}
-
-.nav-toggle-label span, .nav-toggle-label span:before, .nav-toggle-label span:after{
-    
-    display: block;
-    height:2px;
-    width: 2em;
-    border-radius: 2px;
-    position:relative;
-    
-}
-.nav-toggle-label span,  .nav-toggle-label span:before,  .nav-toggle-label span:after{
-    content: "";
-    position: absolute;
-}
-
-.nav-toggle-label span:before{
-    bottom: 7px;
-}
-
-.nav-toggle-label span:after{
-    top: 7px;
-}
-
-#main-nav ul li a{
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
-}
-.nav-toggle:checked ~#main-nav{
-    transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ #main-nav a{
-    opacity: 1;
-    transition: opacity 250ms ease-in-out;
-} */
 
     #main-header{
         padding: 80px;
@@ -128,10 +78,7 @@
       
     }
 
-    #products{
-        /* height: auto; */
-    }
-   
+       
     #products figure img{
         max-height: 140px;
   }
@@ -178,9 +125,14 @@
     }
 
     #contact address, #contact .email, #contact .phone{
-
-        font-size: 1.1em;
+        display: flex;
+        text-align: left;
+        line-height: 1.2em;
+        font-size: .8em;
         margin-top: 1em;
+    }
+    #contact .email, #contact .phone{
+        line-height: 3em;
     }
 
 }

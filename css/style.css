@@ -95,11 +95,12 @@ body{
 #main-header .main-header-content figure img{
    
       max-height: 300px;
-      
-        }
+    
+       }
+
 
 #main-header .main-header-content h1{
-      font-size: 3em;
+      font-size: 3.5em;
       color: white;
       text-align:left;
 
@@ -113,9 +114,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-  
-
-}
+  }
 #products figure{
     
     width: 25%;
@@ -123,21 +122,24 @@ body{
     border: .8px solid #316591;
     text-align: center;
     padding:10px;
-    
-
 }
 
 #products figure img{
     
     height: 150px;
-  
-}
+    transition: all 1s;
+} 
+#products figure img:hover{
+    
+    transform: scale(2, 2);
+ 
+} 
+
 
 #products figure figcaption{
     padding: 10px 0px;
     line-height: 1.5em;
-   
-}
+   }
 
 #products .other {
     width: 25%;
@@ -148,8 +150,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  
-}
+  }
 #products .other p{
     
     color:#fff;
@@ -196,9 +197,9 @@ body{
     color: white;
 }
 
+/* STYLOWANIE FORMULARZA - DO UŻYTKU PO DOJSCIU DO POROZUMIENIA W SPRAWIE RODO */
 
-
-#contact form input:not([type='submit']), 
+/* #contact form input:not([type='submit']), 
 #contact textarea {
     background-color:white;
     padding: 10px;
@@ -226,38 +227,38 @@ body{
 }
 
 #contact form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    /* color: rgb(87, 87, 87);
+    font-family:'Muli';
+  } */
+/* #contact form input::-moz-placeholder { /* Firefox 19+ */
+    /* color: rgb(87, 87, 87);
+    font-family:'Muli'; */ 
+  }
+/* #contact form input:-ms-input-placeholder { IE 10+
     color: rgb(87, 87, 87);
     font-family:'Muli';
-  }
-#contact form input::-moz-placeholder { /* Firefox 19+ */
+  } */
+/* #contact form input:-moz-placeholder { /* Firefox 18- */
+    /* color: rgb(87, 87, 87);
+    font-family:'Muli';
+  } */
+   
+/* #contact textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    /* color: rgb(87, 87, 87);
+    font-family:'Muli';
+  } */ 
+/* #contact textarea::-moz-placeholder { Firefox 19+
     color: rgb(87, 87, 87);
     font-family:'Muli';
-  }
-#contact form input:-ms-input-placeholder { /* IE 10+ */
+  } */
+/* #contact textarea:-ms-input-placeholder { IE 10+
     color: rgb(87, 87, 87);
     font-family:'Muli';
-  }
-#contact form input:-moz-placeholder { /* Firefox 18- */
-    color: rgb(87, 87, 87);
+  } */
+/* #contact textarea:-moz-placeholder { /* Firefox 18- */
+    /* color: rgb(87, 87, 87);
     font-family:'Muli';
-  }
-  
-#contact textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: rgb(87, 87, 87);
-    font-family:'Muli';
-  }
-#contact textarea::-moz-placeholder { /* Firefox 19+ */
-    color: rgb(87, 87, 87);
-    font-family:'Muli';
-  }
-#contact textarea:-ms-input-placeholder { /* IE 10+ */
-    color: rgb(87, 87, 87);
-    font-family:'Muli';
-  }
-#contact textarea:-moz-placeholder { /* Firefox 18- */
-    color: rgb(87, 87, 87);
-    font-family:'Muli';
-  }
+  } */ 
 
 
 
