@@ -6,6 +6,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Muli';
+    font-weight: 300;
 }
 
 .width50{
@@ -41,6 +42,7 @@ body{
 #main-nav ul .menu-item{
     
     list-style-type: none;
+    margin-right: 5px;
     
 }
 
@@ -49,7 +51,7 @@ body{
     text-transform: uppercase;
     color:white;
     padding: 10px 20px;
-    font-weight: 300;
+    
     font-size: 1.1em;
     transition: all .4s;
     
@@ -58,15 +60,15 @@ body{
 #main-nav ul .menu-item a:hover{
 
     border: none;
-    font-weight: 300;
+    
     background-color: #1ac056;
-    font-weight: 600;
+   
 }
 
 /* header */
 #main-header{
     background-image: linear-gradient( rgba(0, 0, 34, 0.5),
-    rgba(0, 0, 34, 0.03)), url(../img/skyscrapers-1081737_1920.jpg);
+    rgba(0, 0, 34, 0.09)), url(../img/skyscrapers-1081737_1920.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -97,12 +99,11 @@ body{
         }
 
 #main-header .main-header-content h1{
-      font-size: 2.5em;
+      font-size: 3em;
       color: white;
       text-align:left;
 
     }
-/*h1 wychodzi poza zakres obrazka - RWD: pod logo*/
 
 /* products */
 
@@ -118,6 +119,7 @@ body{
 #products figure{
     
     width: 25%;
+    height: 230px;
     border: .8px solid #316591;
     text-align: center;
     padding:10px;
@@ -128,33 +130,73 @@ body{
 #products figure img{
     
     height: 150px;
-    z-index: -1;
-    
-     
-      
+  
 }
+
+#products figure figcaption{
+    padding: 10px 0px;
+    line-height: 1.5em;
+   
+}
+
+#products .other {
+    width: 25%;
+    height: 230px;
+    background-color: #316591;
+    border: .8px solid #316591;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#products .other p{
+    
+    color:#fff;
+    font-size: 2em;
+    font-weight: 300;
+
+}
+
+/* kontakt */
 
 #contact {
+    display: block;
     background-color: #316591;
     color: white;
-    display: flex;
     padding: 20px;
+    padding-bottom: 40px;
     
 }
-
+#contact h2{
+    font-size: 2em;
+}
 #contact .address-info{
-    
-   margin-top: 8%;
-   line-height: 1.5em;
+    display: flex;
+    justify-content:space-around;
+    font-size: 1.1em;
+    text-align: center;
+}
+#contact .address-info i{
+    text-align: center;
+    font-size: 2.5em;
+    color:#1ac056;
+    margin: 10px;
+    padding: 10px;
+    border: .8px solid #1ac056;
+}
+
+#contact address{
+    font-style: normal;
+    line-height: 1.5em;
+    font-style: none; 
 }
 
 #contact .email a{
-    color: #1ac056;
+    color: white;
 }
 
-#contact  address{
-    font-style: none;    
-}
+
 
 #contact form input:not([type='submit']), 
 #contact textarea {
